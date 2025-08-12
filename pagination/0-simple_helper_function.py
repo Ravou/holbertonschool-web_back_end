@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+"""This script defines the function index_range used for pagination."""
+
+
 def index_range(page, page_size):
 
     """
