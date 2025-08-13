@@ -49,7 +49,6 @@ class Server:
         # Return the slice (empty list if out of range)
         return dataset[start:end]
 
-    
     def get_hyper(self, page: int = 1, page_size: int = 10) -> dict[str, any]:
         """Return a dictionary with pagination info and data."""
         data = self.get_page(page, page_size)
