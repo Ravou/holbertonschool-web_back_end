@@ -2,6 +2,7 @@
 """
 Script that lists all databases in MongoDB.
 """
+//Script that lists all databases in MongoDB.
 
 
 from pymongo import MongoClient
@@ -9,6 +10,7 @@ from pymongo import MongoClient
 
 def list_databases():
     """Connect to MongoDB and list all database names."""
+    // Connect to MongoDB and list all database names.
     client = MongoClient()
     dbs = client.list_database_names()
 
