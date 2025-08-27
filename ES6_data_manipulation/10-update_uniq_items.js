@@ -1,13 +1,15 @@
-export default function createInt8TypedArray(length, position, value) {
-  if (position < 0 || position >= length) {
-    throw new Error("Position outside range");
-  }
+// 10-update_uniq_items.js
+export default function updateUniqueItems(map) {
+    if (!(map instanceof Map)) {
+        throw new Error('Cannot process');
+    }
 
-  const buffer = new ArrayBuffer(length);
+    for (const [key, value] of map) {
+        if (value === 1) {
+            map.set(key, 100);
+        }
+    }
 
-  const view = new DataView(buffer);
-  view.setInt8(position, value);
-
-  return view;
+    return map;
 }
 
