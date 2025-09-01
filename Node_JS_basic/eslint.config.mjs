@@ -2,7 +2,7 @@ import { defineConfig } from "eslint/config";
 
 export default defineConfig([
   {
-    files: ["**/*.js"], // règles pour tous les fichiers JS
+    files: ["**/*.js"],
     languageOptions: {
       globals: {
         process: "readonly",
@@ -16,17 +16,8 @@ export default defineConfig([
         ecmaFeatures: { jsx: true },
       },
     },
-    plugins: {
-      react: await import("eslint-plugin-react").then(mod => mod.default),
-    },
-    settings: {
-      react: {
-        version: "detect",
-      },
-    },
     rules: {
       semi: "error",
-      // autres règles à ajouter selon besoin
     },
   },
 ]);
