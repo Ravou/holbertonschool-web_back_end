@@ -4,7 +4,7 @@
   "description": "Holberton School ES6 Classes project",
   "main": "1-main.js",
   "scripts": {
-    "dev": "node 1-main.js",
+    "dev": "node 5-main.js",
     "lint": "eslint .",
     "test": "jest",
     "full-test": "npm run lint && npm test"
